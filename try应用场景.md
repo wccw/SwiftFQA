@@ -7,17 +7,17 @@
  * try! : 告诉系统一定没错, 如果发生错误, 程序会崩溃. 不推荐使用
   
   ```  
-    do {
-      let jsonObject = try JSONSerialization.jsonObject(with: jsonArrayString.data(using: String.Encoding.utf8)!, options: .allowFragments)
+ do {
+    let jsonObject = try JSONSerialization.jsonObject(with: jsonArrayString.data(using: String.Encoding.utf8)!, options: .allowFragments)
      
   } catch let error {
   
   }
   
-    if let jsonObject = try? JSONSerialization.jsonObject(with: jsonArrayString.data(using: String.Encoding.utf8)!, options: .allowFragments) {
+ if let jsonObject = try? JSONSerialization.jsonObject(with: jsonArrayString.data(using: String.Encoding.utf8)!, options: .allowFragments) {
   
   }
   
-  let jsonObject = try! JSONSerialization.jsonObject(with: jsonArrayString.data(using: String.Encoding.utf8)!, options: .allowFragments)
+ let jsonObject = try! JSONSerialization.jsonObject(with: jsonArrayString.data(using: String.Encoding.utf8)!, options: .allowFragments)
   
 ```
