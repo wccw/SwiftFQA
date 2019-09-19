@@ -19,14 +19,17 @@ func test(obj: StudentClass) {
     let superMirror = Mirror.init(reflecting: obj).superclassMirror
 
     for (name, value) in (superMirror?.children)! {
-    print("\(String(describing: name!)) : \(value)")
-}
+        print("\(String(describing: name!)) : \(value)")
+    }
 
-let mirror = Mirror.init(reflecting: obj)
+    let mirror = Mirror.init(reflecting: obj)
 
-for (name, value) in (mirror.children) {
-    print("\(String(describing: name!)) : \(value)")
-}
+    for (name, value) in (mirror.children) {
+        print("\(String(describing: name!)) : \(value)")
+    }
+} 
+
+test(obj: StudentClass())
 
 ```
 
