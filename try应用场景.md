@@ -12,13 +12,16 @@
   
   ```
   if let jsonObject = try? JSONSerialization.jsonObject(with: jsonArrayString.data(using: String.Encoding.utf8)!, options: .allowFragments) {
+  
   }
   ```
   
   ```
   do {
       let jsonObject = try JSONSerialization.jsonObject(with: jsonArrayString.data(using: String.Encoding.utf8)!, options: .allowFragments)
+     
   } catch let error {
+  
   }
   ```
 ```
