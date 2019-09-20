@@ -11,7 +11,7 @@ struct作为模型的缺点：
 * 不能被序列化为NSData对象
 * OC无法调用Swift中的struct
 
-如模型较小，无需继承，无需序列化存储，无需OC调用，建议使用struct
+> 如模型较小，无需继承，无需序列化存储，无需OC调用，建议使用struct
 
 struct和class的异同点：
 * struct不能继承，class可以继承
@@ -19,7 +19,7 @@ struct和class的异同点：
 * struct可以直接在构造函数中初始化，class不可以
 ```
 class CNode {
-var data: String?
+    var data: String?
 }
 
 let cnode = CNode()
@@ -27,7 +27,7 @@ cnode.data = "cnode"
 
 
 struct SNode {
-var data: String?
+    var data: String?
 }
 
 let snode = SNode(data: "snode")
@@ -52,15 +52,15 @@ print(snode1.data!)  //snode1
 * struct在函数中修改属性，需要加上mutating，class不需要
 ```
 extension CNode {
-func modifyData(newData: String) {
-self.data = newData
-}
+    func modifyData(newData: String) {
+        self.data = newData
+    }
 }
 
 extension SNode {
-mutating func modifyData(newData: String) {
-self.data = newData
-}
+    mutating func modifyData(newData: String) {
+        self.data = newData
+    }
 }
 ```
 
