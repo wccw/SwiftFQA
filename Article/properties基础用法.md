@@ -73,11 +73,11 @@ print(person.fullName) //wangfei
 class Person {
 var name: String = "" {
     willSet(newName) {
-      print("new value:\(newName)")
-   }
+        print("new value:\(newName)")
+    }
 
-   didSet {
-      print("old value:\(oldValue)")
+    didSet {
+        print("old value:\(oldValue)")
     }
   }
 }
