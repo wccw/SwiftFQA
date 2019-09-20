@@ -43,6 +43,7 @@ cnode1.data = "cnode1"
 print(cnode.data!)   //cnode1
 print(cnode1.data!)  //cnode1
 
+//struct为值类型，当使用let声明的时候，所有的属性都变成了常量，实例属性不能修改
 var snode1 = snode
 snode1.data = "snode1"
 
