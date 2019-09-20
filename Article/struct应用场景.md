@@ -37,6 +37,7 @@ print(snode.data!)   //snode
 ```
 * struct为值类型，浅拷贝，class为指针类型，深拷贝
 ```
+//class为引用类型，可以修改实例变量属性
 let cnode1: CNode = cnode
 cnode1.data = "cnode1"
 
