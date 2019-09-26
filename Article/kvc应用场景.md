@@ -1,4 +1,5 @@
 KVC（Key-value coding）键值编码，允许开发者通过key间接访问对象的属性，或者给对象属性赋值，而不需要调用明确的存取方法。这样可以在运行时动态访问和修改属性，是iOS的黑魔法之一。
+
 OC 中KVC是因为遵循了NSKeyValueCoding协议，在Swift中使用KVC，需要继承NSObject，并且需要在变量前面添加@objc
 
 KVC常用场景：
