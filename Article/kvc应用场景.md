@@ -14,14 +14,23 @@ class Weather: NSObject {
 }
 let wea = Weather()
 
-//动态取值和赋值，访问私有变量
+//动态取值和赋值
 wea.setValue("2019-10-1", forKeyPath: "time")
-wea.setValue("sunday", forKey: "weather")
-print(wea.time,wea.value(forKey: "weather"))
 
 //字典转模型
 let weatherJson = ["weather":"cloudy",
                   "time":"2019-10-1"]
 wea.setValuesForKeys(weatherJson)
-print(wea.time,wea.value(forKey: "weather"))
 ```
+
+使用runtime获取私有属性，kvc修改变量
+```
+var count: UInt32 = 0
+let ivars = class_copyIvarList(Weather.self, &count)
+for i in 0..<numericCast(count) {
+  let name = ivar_getName((ivars?[i])!)
+  print(String(cString: name!)) //time weather
+}
+wea.setValue("sunday", forKey: "weather")
+
+ ```
