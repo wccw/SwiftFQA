@@ -19,7 +19,7 @@ wea.setValue("2019-10-1", forKeyPath: "time")
 wea.setValue("sunday", forKey: "weather")
 print(wea.time,wea.value(forKey: "weather"))
 
-//字段转模型
+//字典转模型
 let weatherJson = ["weather":"cloudy",
                   "time":"2019-10-1"]
 wea.setValuesForKeys(weatherJson)
