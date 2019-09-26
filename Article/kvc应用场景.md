@@ -23,7 +23,7 @@ let weatherJson = ["weather":"cloudy",
 wea.setValuesForKeys(weatherJson)
 ```
 
-使用runtime获取私有属性，kvc修改变量
+获取私有属性，并修改变量
 ```
 var count: UInt32 = 0
 let ivars = class_copyIvarList(Weather.self, &count)
