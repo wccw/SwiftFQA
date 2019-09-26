@@ -3,6 +3,7 @@
 * [guard 应用场景](https://github.com/wccw/SwiftFQA/blob/master/Article/guard应用场景.md)
 * [inout 应用场景](https://github.com/wccw/SwiftFQA/blob/master/Article/inout应用场景.md)
 * [try 应用场景](https://github.com/wccw/SwiftFQA/blob/master/Article/try应用场景.md)
+* [kvc 应用场景](https://github.com/wccw/SwiftFQA/blob/master/Article/kvc应用场景.md)
 * [numericCast 应用场景](https://github.com/wccw/SwiftFQA/blob/master/Article/numericCast应用场景.md)
 * [mirror 反射的应用场景](https://github.com/wccw/SwiftFQA/blob/master/Article/mirror反射的应用场景.md)
 * [struct 应用场景](https://github.com/wccw/SwiftFQA/blob/master/Article/struct应用场景.md)
